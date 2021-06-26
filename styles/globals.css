@@ -1,0 +1,301 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #343a40;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0;
+}
+
+h1 {
+  font-size: x-large;
+}
+
+h2 {
+  font-size: larger;
+}
+
+h3 {
+  font-size: medium;
+}
+
+.container_centered {
+  display: flex;
+  flex-direction: column;
+  background: #fafafa;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+
+.spinner-border {
+  margin: 10px auto;
+  display: block;
+  width: 5rem;
+  height: 5rem;
+}
+
+.jumbotron {
+  padding: 10px;
+  margin: 5px 0;
+}
+
+.jumbo_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 578px) {
+  #search-button {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.card_anchor:hover {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.card-body {
+  padding: 0.7rem;
+}
+
+.message_container {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination {
+  margin-bottom: 0;
+}
+
+.project_details .card-body div {
+  margin: 5px 0;
+}
+
+.task_timechart {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.task_block {
+  height: 50px;
+  color: white;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.task_block:hover {
+  background: #fff;
+}
+
+.project_dates {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (max-width: 578px) {
+  .project_dates {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.tooltip_button,
+.tooltip_button:hover,
+.remove_button,
+.remove_button:hover,
+.add_button,
+.add_button:hover {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.color_red {
+  color: red;
+}
+
+.two_columns_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+@media (max-width: 600px) {
+  .two_columns_grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.two_cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2px;
+}
+
+@media (max-width: 1000px) {
+  .two_cols {
+    grid-template-columns: 1fr;
+  }
+}
+
+.two_columns_grid .card,
+.grid_20_60 .card {
+  padding: 5px;
+}
+
+.two_columns_grid .form-label,
+.grid_20_60 .form-label {
+  font-size: small;
+}
+
+.grid_20_60 {
+  display: grid;
+  grid-template-columns: 20% 1fr 20%;
+}
+
+@media (max-width: 1000px) {
+  .grid_20_60 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.task_container {
+  padding: 10px;
+}
+
+.card-body span {
+  padding: 0 10px;
+}
+
+.task_flex_row {
+  flex-direction: row;
+  line-height: 30px;
+}
+
+.task_flex_row i {
+  line-height: inherit;
+  margin-left: auto;
+  margin-right: 5px;
+}
+
+@media (min-width: 600px) {
+  .members_flex_col div {
+    display: inline-block;
+  }
+}
+
+.proj_name {
+  display: inline-block;
+  min-width: 280px;
+  width: 240px;
+  word-wrap: break-word;
+}
+
+.nav_header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+footer {
+  background-color: #343a40;
+  color: white;
+  font-size: medium;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero {
+  height: 540px;
+  width: 100%;
+  padding: 60px;
+  /* background: rgba(0, 0, 0, 0.5) url('/images/hero.jpg') no-repeat center center; */
+  background-color: #343a40;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero_title {
+  font-size: 43px;
+  margin: 30px 0;
+}
+
+.hero_subtitle {
+  font-size: 24px;
+  margin-top: 30px;
+}
+
+.features {
+  padding: 30px;
+  background-color: #343a40;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* text-align: center; */
+  font-size: large;
+}
+
+.call_to_action,
+.call .card {
+  min-height: 300px;
+}
+
+.call_to_action {
+  margin: 50px 0;
+}
+
+.call .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* text-align: center; */
+  font-size: large;
+}
+
+.signup_button {
+  font-size: 39px;
+  min-height: 150px;
+}
