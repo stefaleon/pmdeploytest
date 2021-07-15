@@ -245,7 +245,6 @@ footer {
   height: 540px;
   width: 100%;
   padding: 60px;
-  /* background: rgba(0, 0, 0, 0.5) url('/images/hero.jpg') no-repeat center center; */
   background-color: #343a40;
   color: #fff;
   display: flex;
@@ -273,7 +272,6 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* text-align: center; */
   font-size: large;
 }
 
@@ -291,11 +289,16 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* text-align: center; */
+  text-align: center;
   font-size: large;
 }
 
 .signup_button {
   font-size: 39px;
   min-height: 150px;
+}
+
+.carousel-caption {
+  text-shadow: 1px 1px #000;
+  color: cyan;
 }

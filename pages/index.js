@@ -2,14 +2,12 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import NavigationBar from 'components/NavigationBar';
-import { Card, Carousel, Row, Col, Button } from 'react-bootstrap';
-import router from 'next/router';
+import { Card, Carousel, Button } from 'react-bootstrap';
 
 export default function Home({ title, description, keywords }) {
   const router = useRouter();
 
-  const signUp = () => {
-    console.log('sign up');
+  const handleSignUp = () => {
     router.push('/register');
   };
 
@@ -22,9 +20,10 @@ export default function Home({ title, description, keywords }) {
         <link rel="icon" href="/favicon.ico" />
         <link
           rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-          integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-          crossorigin="anonymous"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+          integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+          crossOrigin="anonymous"
+          referrerPolicy="no-referrer"
         />
       </Head>
 
@@ -32,15 +31,15 @@ export default function Home({ title, description, keywords }) {
         <NavigationBar />
       </header>
 
-      <main className="hero">
+      <section className="hero">
         <h1 className="hero_title">Project Manager</h1>
         <i className="fas fa-project-diagram fa-6x"></i>
         <h2 className="hero_subtitle">
           a web application for management of projects and tasks
         </h2>
-      </main>
+      </section>
 
-      <section className="demo two_cols">
+      <section className="two_cols">
         <div className="features">
           <div>
             <p>- create and manage projects </p>
@@ -110,7 +109,7 @@ export default function Home({ title, description, keywords }) {
           className="signup_button"
           size="lg"
           block
-          onClick={signUp}
+          onClick={handleSignUp}
         >
           REGISTER!
         </Button>
@@ -126,5 +125,5 @@ export default function Home({ title, description, keywords }) {
 Home.defaultProps = {
   title: 'Project Manager',
   description: 'Project management application',
-  keywords: 'project, tasks, members, duration, deadline',
+  keywords: 'projects, tasks, categories, members',
 };
